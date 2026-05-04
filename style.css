@@ -213,7 +213,7 @@ footer {
 /* === MEDIA QUERIES (Responsive) === */
 @media (max-width: 768px) {
     .nav-links {
-        position: relative;
+        position: absoulte;
         top: 55px;
         left: -150px;
         right: 0;
