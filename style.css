@@ -65,19 +65,25 @@ header h1 {
 /* === NAVIGATION & HAMBURGER MENU === */
 nav {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .nav-links {
     display: flex;
     gap: 20px;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    padding: 6px 12px;
-    border-radius: 4px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
     /* === TRANSITION === */
     transition: all 0.3s ease;
 }
@@ -86,13 +92,28 @@ nav {
     background: #ffd700; /* Yellow */
     color: #000;
     font-weight: 600;
+
+    transitions: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .hamburger {
     display: none;
-    font-size: 26px;
+    flex-direction: column;
+    gap: 5px;
+    background:transparent;
+    border: none;
+    padding: 5px;
     cursor: pointer;
-    color: white;
+    
+}
+.hamber span{
+    width: 28px;
+    height:3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: left center;
 }
 
 /* === MAIN CONTENT === */
@@ -217,20 +238,24 @@ footer {
         top: 55px;
         left: o;
         right: 0;
-        background: #000;
+        background: linear-gradient(180deg, #000000, #004d00);
         flex-direction: column;
         text-align: center;
         display: none;
-        padding: 10px 0;
+        padding: 15px 0;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 5px 12px rgba(0,0,0,0.3);
         z-index: 10;
     }
 
     .nav-links.show {
         display: flex;
+        animation: fadeIn 0.4s ease;
+        
     }
 
     .hamburger {
-        display: block;
+        display: flex;
     }
 
     header h1 {
