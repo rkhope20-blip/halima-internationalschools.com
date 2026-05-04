@@ -213,9 +213,9 @@ footer {
 /* === MEDIA QUERIES (Responsive) === */
 @media (max-width: 768px) {
     .nav-links {
-        position: absolute;
+        position: relative;
         top: 55px;
-        left: 0;
+        left: -150px;
         right: 0;
         background: #000;
         flex-direction: column;
