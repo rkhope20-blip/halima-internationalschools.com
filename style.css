@@ -101,7 +101,7 @@ nav {
     display: none;
     flex-direction: column;
     gap: 5px;
-    background:transparent;
+   
     border: none;
     padding: 5px;
     cursor: pointer;
