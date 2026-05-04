@@ -1,0 +1,242 @@
+/* === WEB FONTS === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* === GRADIENT BACKGROUND === */
+    background: linear-gradient(to bottom, #ffffff, #f0f8f0);
+    color: #333;
+    line-height: 1.6;
+    
+}
+#home{
+   background-image: url(logo2.png);
+   background-size:cover;
+   background-attachment:fixed;
+}
+
+/* === HEADER WITH LOGO === */
+header {
+    /* === GRADIENT === */
+    background: linear-gradient(90deg, #006400, #000000); /* Green to Black */
+    color: #fff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* === SCHOOL BADGE/LOGO === */
+.badge {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #006400, #ffd700, #000000); /* Green, Yellow, Black */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 3px solid #fff;
+    /* === TRANSITION === */
+    transition: transform 0.5s ease;
+}
+
+.badge:hover {
+    transform: rotate(360deg);
+}
+
+header h1 {
+    /* === TEXT SHADOW === */
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 22px;
+}
+
+/* === NAVIGATION & HAMBURGER MENU === */
+nav {
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    /* === TRANSITION === */
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    background: #ffd700; /* Yellow */
+    color: #000;
+    font-weight: 600;
+}
+
+.hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+}
+
+/* === MAIN CONTENT === */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #006400;
+    margin-bottom: 20px;
+    /* === TEXT SHADOW === */
+    text-shadow: 1px 1px 2px #ccc;
+    /* === ANIMATION === */
+    animation: fadeIn 1.2s ease;
+}
+
+/* === ANIMATION KEYFRAMES === */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.animate-pulse {
+    animation: pulse 3s infinite;
+}
+
+/* === GRID LAYOUT === */
+.grid-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.box {
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #006400;
+    background: linear-gradient(to right, #f8fff8, #fffbeb); /* Light green to cream */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    /* === TRANSITION === */
+    transition: box-shadow 0.3s ease;
+}
+
+.box:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.box h3 {
+    color: #000;
+    margin-bottom: 10px;
+    /* === TEXT SHADOW === */
+    text-shadow: 1px 1px 2px #ddd;
+}
+
+/* === FLEXBOX === */
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* === FORM STYLES === */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button {
+    background: linear-gradient(90deg, #006400, #ffd700);
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    /* === TRANSITION === */
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+/* === FOOTER === */
+footer {
+    background: linear-gradient(90deg, #000, #006400);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    /* === TEXT SHADOW === */
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* === MEDIA QUERIES (Responsive) === */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 55px;
+        left: 0;
+        right: 0;
+        background: #000;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+        padding: 10px 0;
+        z-index: 10;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+}

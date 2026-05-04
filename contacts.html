@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Halima International School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+   <div class="logo">
+        <div class="badge"><img src="logo2.png" width="100px"></div>
+        <h1>HALIMA INTERNATIONAL SCHOOL</h1>
+    </div>
+
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="staff.html">Staff Profile</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contacts.html" class="active">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h2 class="animate-pulse">GET IN TOUCH WITH US</h2>
+
+    <div class="flex-row">
+        <div class="box" style="flex:1; min-width:280px;">
+            <h3>📍 Our Location</h3>
+            <p>Plot 45, Academy Road<br>Mbale Municipality<br>Eastern Region, Uganda<br>P.O. Box 1234, Mbale</p>
+
+            <h3>📞 Phone Numbers</h3>
+            <p>Office: +256 771 123 456<br>Headteacher: +256 752 987 654<br>Bursar: +256 781 456 789</p>
+
+            <h3>📧 Email Address</h3>
+            <p>info@halimaint.ac.ug<br>admissions@halimaint.ac.ug</p>
+        </div>
+
+        <div class="box" style="flex:1; min-width:280px;">
+            <h3>✉️ Send Us a Message</h3>
+            <form>
+                <input type="text" name="fullname" placeholder="Your Full Name" required>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <input type="text" name="phone" placeholder="Your Phone Number">
+                <textarea name="message" placeholder="Write your message or enquiry here..." rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 Halima Intrenational School 
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
