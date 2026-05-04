@@ -1,7 +1,10 @@
 // Toggle Hamburger Menu
 function toggleMenu() {
     const menu = document.querySelector('.nav-links');
-    menu.classList.toggle('show');
+    const hamburger = document.getElementById('hamburger');
+     menu.classList.toggle('show');
+    hamburger.classList.toggle('active');
+    
 }
 
 // Simple form alert
