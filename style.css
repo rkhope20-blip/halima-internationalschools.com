@@ -17,7 +17,6 @@ body {
 }
 
 
-
 /* === HEADER WITH LOGO === */
 header {
     /* === GRADIENT === */
@@ -65,14 +64,12 @@ header h1 {
 /* === NAVIGATION & HAMBURGER MENU === */
 nav {
     position: relative;
-   
 }
 
 .nav-links {
     display: flex;
     gap: 20px;
     list-style: none;
-    
 }
 
 .nav-links a {
@@ -80,8 +77,6 @@ nav {
     text-decoration: none;
     padding: 6px 12px;
     border-radius: 4px;
-    font-weight: 500;
-    letter-spacing: 0.3px;
     /* === TRANSITION === */
     transition: all 0.3s ease;
 }
@@ -90,35 +85,14 @@ nav {
     background: #ffd700; /* Yellow */
     color: #000;
     font-weight: 600;
-
-    transitions: all 0.3s ease;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .hamburger {
     display: none;
-    font-size:26px;
-    color:white;
+    font-size: 26px;
     cursor: pointer;
-    
+    color: white;
 }
-/*.hamber span{
-    width: 28px;
-    height:3px;
-    background-color: white;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-    transform-origin: left center;
-}
-.hamburger.active span:nth-child(1) {
-    transform: rotate(45deg);
-}
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-.hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg);
-}*/
 
 /* === MAIN CONTENT === */
 .container {
@@ -238,11 +212,11 @@ footer {
 /* === MEDIA QUERIES (Responsive) === */
 @media (max-width: 768px) {
     .nav-links {
-        position: absoulte;
+        position: absolute;
         top: 55px;
         left: -100px;
         right: 0;
-        background: linear-gradient(180deg, #000000, #004d00);
+        background: #000;
         flex-direction: column;
         text-align: center;
         display: none;
@@ -252,7 +226,6 @@ footer {
 
     .nav-links.show {
         display: flex;
-        
     }
 
     .hamburger {
