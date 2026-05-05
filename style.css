@@ -65,23 +65,21 @@ header h1 {
 /* === NAVIGATION & HAMBURGER MENU === */
 nav {
     position: relative;
-    display: flex;
-    align-items: center;
+   
 }
 
 .nav-links {
     display: flex;
     gap: 20px;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 6px;
+    padding: 6px 12px;
+    border-radius: 4px;
     font-weight: 500;
     letter-spacing: 0.3px;
     /* === TRANSITION === */
@@ -99,15 +97,12 @@ nav {
 
 .hamburger {
     display: none;
-    flex-direction: column;
-    gap: 5px;
-   
-    border: none;
-    padding: 5px;
+    font-size:26px;
+    color:white;
     cursor: pointer;
     
 }
-.hamber span{
+/*.hamber span{
     width: 28px;
     height:3px;
     background-color: white;
@@ -123,7 +118,7 @@ nav {
 }
 .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg);
-}
+}*/
 
 /* === MAIN CONTENT === */
 .container {
@@ -251,20 +246,17 @@ footer {
         flex-direction: column;
         text-align: center;
         display: none;
-        padding: 15px 0;
-        border-radius: 0 0 8px 8px;
-        box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+        padding: 10px 0;
         z-index: 10;
     }
 
     .nav-links.show {
         display: flex;
-        animation: fadeIn 0.4s ease;
         
     }
 
     .hamburger {
-        display: flex;
+        display: block;
     }
 
     header h1 {
